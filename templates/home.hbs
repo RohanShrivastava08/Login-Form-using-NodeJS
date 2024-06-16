@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+    /* Global styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Header styles */
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .header nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+
+    .header nav ul li a:hover {
+        color: #6e8efb;
+    }
+
+    /* About section styles */
+    .about {
+        background-color: #6e8efb;
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+    }
+
+    /* Main content styles */
+    .main-content {
+        margin-top: 2rem;
+    }
+
+    .blog-post {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .blog-post h2 {
+        color: #333;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-post p {
+        color: #666;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .blog-post ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .blog-post li {
+        color: #666;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .blog-post a {
+        color: #6e8efb;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .blog-post a:hover {
+        text-decoration: underline;
+    }
+
+    #h1head{
+        text-align: center;
+        color: #6e8efb;
+    }
+    /* Footer styles */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 1.5rem;
+        }
+
+        .about h2 {
+            font-size: 1.5rem;
+        }
+
+        .about p {
+            font-size: 1rem;
+        }
+
+        .blog-post h2 {
+            font-size: 1.5rem;
+        }
+
+        .blog-post p,
+        .blog-post li {
+            font-size: 1rem;
+        }
+
+        .footer {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+<body>
+    <header class="header">
+        
+        <div class="container">
+            <h1>Welcome to our Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 id="h1head">MY BLOG ARTICLES</h1>
+            <div class="blog-post">
+                <h2>Introduction to MERN Stack</h2>
+                <p>The MERN stack is a popular technology stack for building modern web applications.</p>
+                <ul>
+                    <li>MongoDB - a NoSQL database</li>
+                    <li>Express.js - a web application framework for Node.js</li>
+                    <li>React.js - a front-end JavaScript library for building user interfaces</li>
+                    <li>Node.js - a runtime environment for executing JavaScript code server-side</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Setting Up MongoDB</h2>
+                <p>Learn how to install MongoDB and set it up for your MERN stack application.</p>
+                <ul>
+                    <li>Download and install MongoDB</li>
+                    <li>Configure MongoDB for local development</li>
+                    <li>Create databases and collections</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Building RESTful APIs with Express.js</h2>
+                <p>Express.js simplifies the process of creating robust APIs for your MERN stack application.</p>
+                <ul>
+                    <li>Create routes and handle HTTP methods (GET, POST, PUT, DELETE)</li>
+                    <li>Implement middleware for authentication and data validation</li>
+                    <li>Integrate with MongoDB using Mongoose ORM</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Developing Front-End with React.js</h2>
+                <p>React.js facilitates the development of dynamic and interactive user interfaces.</p>
+                <ul>
+                    <li>Build components and manage state using hooks</li>
+                    <li>Fetch data from APIs and update UI using React hooks and lifecycle methods</li>
+                    <li>Optimize performance with React features like memoization and virtual DOM</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Deploying MERN Stack Applications</h2>
+                <p>Deploying your MERN stack application involves:</p>
+                <ul>
+                    <li>Setting up cloud servers or platforms (e.g., AWS, Heroku)</li>
+                    <li>Configuring environment variables and security settings</li>
+                    <li>Deploying and monitoring your application</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Best Practices for MERN Stack Development</h2>
+                <p>Follow these best practices to ensure a smooth development process.</p>
+                <ul>
+                    <li>Use version control (e.g., Git) for managing codebase</li>
+                    <li>Implement testing (unit and integration) for quality assurance</li>
+                    <li>Adopt coding standards and conventions for consistency</li>
+                </ul>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </main>
+
+
+     <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod massa quis neque molestie, nec convallis tellus rutrum. Donec ultricies libero sed ligula scelerisque congue.</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Blogging Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

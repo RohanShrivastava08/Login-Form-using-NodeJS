@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+ <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(#c7a1e6, #de6b6b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: rgb(232, 241, 111);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Ensures good spacing between form fields */
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            box-sizing: border-box; /* Ensures padding is included in width */
+            width: 100%; /* Full width of the container */
+        }
+
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            border-color: #6e8efb;
+            outline: none;
+        }
+
+        .login-container input[type="submit"] {
+            background: #4CAF50; /* Green background */
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            width: 100%; /* Full width of the container */
+        }
+
+        .login-container input[type="submit"]:hover {
+            background: #007BFF; /* Blue background on hover */
+        }
+
+        .login-container input[type="submit"]:active {
+            transform: scale(0.95);
+        }
+
+        .login-container a {
+            margin-top: 1rem;
+            display: inline-block;
+            color: #6e8efb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            display: none;
+            margin-top: 1rem;
+        }
+    </style>
+<body>
+    <div class="login-container">
+        <h2>Sign Up</h2>
+
+        <form action="/signup" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="password" name="password" placeholder="Enter Your Password">
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
